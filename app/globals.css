@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Tema escuro "música" com acento fúcsia — identidade própria na coleção */
+  --color-bg: #0c0a14;
+  --color-card: #18121f;
+  --color-accent: #d946ef; /* fúcsia */
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  min-height: 100dvh;
+  color: #f1ecf5;
+  background:
+    radial-gradient(80% 60% at 50% -10%, #3a1145 0%, transparent 60%),
+    var(--color-bg);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: #d946ef;
+  color: #0c0a14;
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
